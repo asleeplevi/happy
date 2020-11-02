@@ -58,7 +58,7 @@ function Login(){
                             <span className="checkmark"></span>
                             <span className="text">Lembrar-me</span>
                         </label>
-                        <Link to="reset">Esqueci minha senha</Link>
+                        <Link to="forgotPassword">Esqueci minha senha</Link>
                     </div>
                     <button type="submit" >Entrar</button>
                 </Form>
