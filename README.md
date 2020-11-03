@@ -4,12 +4,12 @@
 
 <p align="center">
   <a href="#bulb-sobre">Sobre</a> |
-  <a href="#rocket-o-proximo-nível">O próximo nível</a> |
+  <a href="#rocket-o-próximo-nível">O próximo nível</a> |
   <a href="#mag-tecnologias">Tecnologias</a> | 
-  <a href="#pushpin-layout">Layout</a> |
-  <a href="#-como-executar">Como executar</a> |
+  <a href="#art-layout">Layout</a> |
+  <a href="#pushpin-como-executar">Como executar</a> |
   <a href="#wrench-como-contribuir">Como contribuir</a> |
-  <a href="#-licenca">Licença</a>
+  <a href="#pencil-licença">Licença</a>
 </p>
 
 <br>
