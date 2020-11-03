@@ -31,8 +31,8 @@ Desafios fornecidos pela rocketseat, entregues ao fim da semana NLW com o intuit
   <br> Envio de email, com link para a recuperação de senha.
 - **Cadastro Pendente** :heavy_check_mark:
   <br> O cadastro do orfanato fica como pendente, e só aparece no mapa, após a aprovação de um administrador.
-- **Localização real do usuário** :interrobang:
-  <br> Pegar a localização real do usuário. _O mapa já pega a sua localização, mas a cidade e estado ainda é estático._
+- **Localização real do usuário** :heavy_check_mark:
+  <br> Pegar a localização real do usuário.
 - **Logout da aplicação** :heavy_check_mark:
   <br> Botão para sair da aplicação, limpando os dados no localStorage.
   
