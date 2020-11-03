@@ -185,7 +185,8 @@ export default function EditOrphanage({ match }:any){
 
     useEffect(()=> {
         getOrphanages()
-        
+       
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
     if(!orphanage){

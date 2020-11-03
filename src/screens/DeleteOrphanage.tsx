@@ -43,6 +43,8 @@ export default function DeleteOrphanage({ match }:any){
     
     useEffect(()=>{
         getOrphanage()
+        
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
     return(

@@ -28,7 +28,7 @@ const ForgotPassword:React.FC = () => {
     return( 
         <Background>
             <Wrapper>
-                <img src={Logo} />
+                <img src={Logo} alt="Happy"/>
                 <div className="location">
                     <strong>Pernambuco</strong>
                     <span>Olinda</span>
