@@ -16,7 +16,8 @@
 
 ## :bulb:  Sobre
 
-Happy é um projeto que lhe permite cadastrar orfanatos, com o intuito de facilitar a visitação, incluindo dados necessários para encontrar e marcar visitas!
+Happy é um projeto que permite ao usuário cadastrar orfanatos, com o intuito de facilitar e promover visitas as instituições, fornecendo os dados necessários para encontrar e marcar visitas!
+
 Esse projeto foi desenvolvido durante a terceira edição da Next Level Week, um evento da [Rocketseat](https://github.com/Rocketseat)
 
 
