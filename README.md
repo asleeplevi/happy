@@ -3,25 +3,25 @@
 </h1>
 
 <p align="center">
-  <a href="#-sobre">Sobre</a> |
-  <a href="#-o-proximo-nível">O próximo nível</a> |
-  <a href="#-tecnologias">Tecnologias</a> | 
-  <a href="#-layout">Layout</a> |
+  <a href="#bulb-sobre">Sobre</a> |
+  <a href="#rocket-o-proximo-nível">O próximo nível</a> |
+  <a href="#mag-tecnologias">Tecnologias</a> | 
+  <a href="#pushpin-layout">Layout</a> |
   <a href="#-como-executar">Como executar</a> |
-  <a href="#-como-contribuir">Como contribuir</a> |
+  <a href="#wrench-como-contribuir">Como contribuir</a> |
   <a href="#-licenca">Licença</a>
 </p>
 
 <br>
 
-## Sobre :bulb:
+## :bulb: Sobre
 
 Happy é um projeto que permite ao usuário cadastrar orfanatos, com o intuito de facilitar e promover visitas as instituições, fornecendo os dados necessários para encontrar e marcar visitas!
 
 Esse projeto foi desenvolvido durante a terceira edição da Next Level Week, um evento da [Rocketseat](https://github.com/Rocketseat)
 
 
-## :rocket:O próximo nível
+## :rocket: O próximo nível
 
 Desafios fornecidos pela rocketseat, entregues ao fim da semana NLW com o intuito de levar a aplicação para um próximo nível!
 
@@ -60,6 +60,10 @@ Desafios fornecidos pela rocketseat, entregues ao fim da semana NLW com o intuit
 - Leaflet
 - Styled Components
 
+## :art: Layout
+
+O layout foi desenvolvido por [Tiago Luchtenberg](https://www.instagram.com/tiagoluchtenberg/) e está disponível [aqui](https://www.figma.com/file/WN1nagnfaEG6C1iiSoXx1o/Happy-Web-2.0?node-id=48861%3A291)
+  
   
 ## :pushpin: Como executar
 
