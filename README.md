@@ -149,7 +149,7 @@ git push origin my-feature
 ```
 
 
-## :pencil: Lincença
+## :pencil: Licença
 
 Este projeto está sob licença [MIT]().
 
