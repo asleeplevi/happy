@@ -67,7 +67,7 @@ O layout foi desenvolvido por [Tiago Luchtenberg](https://www.instagram.com/tiag
   
 ## :pushpin: Como executar
 
-Você pode testar a aplicação neste [link](https://5fa0cd9aab138f008727036a--asleeplevi-happy.netlify.app/)
+Você pode testar a aplicação neste [link](https://asleeplevi-happy.netlify.app/)
 
 Ou se quiser baixar, é só seguir estes passos:
 
