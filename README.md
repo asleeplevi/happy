@@ -14,14 +14,14 @@
 
 <br>
 
-## :bulb:  Sobre
+## Sobre :bulb:
 
 Happy é um projeto que permite ao usuário cadastrar orfanatos, com o intuito de facilitar e promover visitas as instituições, fornecendo os dados necessários para encontrar e marcar visitas!
 
 Esse projeto foi desenvolvido durante a terceira edição da Next Level Week, um evento da [Rocketseat](https://github.com/Rocketseat)
 
 
-## :rocket: O próximo nível
+## :rocket:O próximo nível
 
 Desafios fornecidos pela rocketseat, entregues ao fim da semana NLW com o intuito de levar a aplicação para um próximo nível!
 
