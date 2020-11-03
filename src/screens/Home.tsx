@@ -1,13 +1,40 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FiArrowRight } from 'react-icons/fi'
 import { Link } from 'react-router-dom' 
 
 import { SquareButton, LargeButton } from '../styles/'
 import { Wrapper, Background, Header, Main } from '../styles/screens/Home'
 
+import GetLocation from '../services/location'
+
 import logoImg from '../images/Logo.svg'
 
+interface UserAddress{
+    city: string,
+    state: string
+}
+
 function Landing(){
+
+    const [userAddres, setUserAddress] = useState<UserAddress>({} as UserAddress)
+
+
+    async function getCurrentCity(latitude:number, longitude: number){
+        
+        const address = await GetLocation(latitude, longitude)
+
+        setUserAddress(address)
+
+    }
+
+    useEffect(()=>{
+        navigator.geolocation.getCurrentPosition( location => {
+            const { latitude, longitude } = location.coords
+
+            getCurrentCity(latitude, longitude)
+        })   
+    },[])
+
     return(
         <Background>
             <Wrapper>
@@ -15,8 +42,8 @@ function Landing(){
                     <div className="logo">
                         <img src={logoImg} alt="Happy"/>
                         <div className="location">
-                            <strong>Pernambuco</strong>
-                            <span>Olinda</span>
+                            <strong>{userAddres.state}</strong>
+                            <span>{userAddres.city}</span>
                         </div>
                     </div>
                     <LargeButton>

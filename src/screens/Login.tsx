@@ -1,4 +1,4 @@
-import React, { FormEvent, useState } from 'react'
+import React, { FormEvent, useEffect, useState } from 'react'
 import { FiArrowLeft } from 'react-icons/fi'
 import { Link } from 'react-router-dom' 
 
@@ -6,7 +6,14 @@ import { Wrapper, Background, Form, Cover, Back } from '../styles/screens/Login'
 import { SubTitle} from '../styles/'
 import { useAuth } from '../contexts/auth'
 
+import GetLocation from '../services/location'
+
 import logoImg from '../images/Logo-taller.svg'    
+
+interface UserAddress{
+    city: string,
+    state: string
+}
 
 function Login(){
 
@@ -15,6 +22,7 @@ function Login(){
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [remember, setRemember] = useState(Boolean)
+    const [userAddres, setUserAddress] = useState<UserAddress>({} as UserAddress)
 
     async function handleSubmit(event:FormEvent){
         event.preventDefault()
@@ -25,14 +33,34 @@ function Login(){
     
     }
 
+
+    async function getCurrentCity(latitude:number, longitude: number){
+        
+        const address = await GetLocation(latitude, longitude)
+
+        setUserAddress(address)
+
+    }
+
+    useEffect(()=>{
+
+        navigator.geolocation.getCurrentPosition( location => {
+            const { latitude, longitude } = location.coords
+
+            getCurrentCity(latitude, longitude)
+
+        })  
+
+    },[])
+
     return(
         <Background>
             <Wrapper>
                 <Cover>
                     <img src={logoImg} alt="Happy"/>
                     <div className="location">
-                        <strong>Pernambuco</strong>
-                        <span>Olinda</span>
+                        <strong>{userAddres.state}</strong>
+                        <span>{userAddres.city}</span>
                     </div>
                 </Cover>
                 <Form onSubmit={handleSubmit} >

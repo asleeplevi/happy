@@ -10,6 +10,8 @@ import mapIcon from '../utils/mapIcon'
 import api from '../services/api'
 
 import { Aside, Background, AddOrphanageButton } from '../styles/screens/App'
+import GetLocation from '../services/location'
+
 
 interface Orphanage{
     id: number
@@ -18,12 +20,26 @@ interface Orphanage{
     name: string
 }
 
+interface UserAddress{
+    city: string,
+    state: string
+}
+
 export default function App(){
 
     const history = useHistory()
 
     const [orphanages, setOrphanages] = useState<Orphanage[]>([])
     const [userPosition, setUserPosition] = useState({latitude: 0, longitude: 0})
+    const [userAddres, setUserAddress] = useState<UserAddress>({} as UserAddress)
+
+    async function getCurrentCity(latitude:number, longitude: number){
+        
+        const address = await GetLocation(latitude, longitude)
+
+        setUserAddress(address)
+
+    }
 
     useEffect(()=>{
         api.get('orphanages').then(response => {
@@ -31,11 +47,13 @@ export default function App(){
 
         })
         
-        navigator.geolocation.getCurrentPosition( location =>{
+        navigator.geolocation.getCurrentPosition( location => {
             const { latitude, longitude } = location.coords
-        
+
             setUserPosition({latitude, longitude})
-        })
+            getCurrentCity(latitude, longitude)
+
+        })       
 
     },[])
 
@@ -49,8 +67,8 @@ export default function App(){
                     <p>Muitas crianças estão esperando a sua visita :)</p>
                 </header>
                 <footer>
-                    <strong>Pernambuco</strong>
-                    <span>Olinda</span>
+                    <strong>{userAddres.state}</strong>
+                    <span>{userAddres.city}</span>
                 </footer>    
             </Aside>
             <Map
