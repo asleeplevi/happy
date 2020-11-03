@@ -151,6 +151,6 @@ git push origin my-feature
 
 ## :pencil: Licença
 
-Este projeto está sob licença [MIT]().
+Este projeto está sob licença [MIT](https://github.com/asleeplevi/happy/blob/main/license).
 
 Feito com :blue_heart: por Levi
