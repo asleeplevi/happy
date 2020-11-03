@@ -23,6 +23,8 @@ Esse projeto foi desenvolvido durante a terceira edição da Next Level Week, um
 
 ## :rocket: O próximo nível
 
+Desafios fornecidos pela rocketseat, entregues ao fim da semana NLW com o intuito de levar a aplicação para um próximo nível!
+
 - **Acesso restrito** :heavy_check_mark:
   <br> Área administrativa, com rotas autenticadas, e função lembrar-me.
 - **Recuperação de Senhas** :heavy_check_mark:
